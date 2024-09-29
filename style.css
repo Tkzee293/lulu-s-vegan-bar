@@ -336,7 +336,7 @@ footer .social-media img {
 
 /* mobile specs  375px - 768px*/
 
-@media screen and (min-width: 375px) and (max-width: 768px){
+@media screen and (min-width: 280px) and (max-width: 768px){
 
     h1 {
         font-size: 2rem; /* desktop -  35px - 50px, mobile - 25px to 30px */
