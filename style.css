@@ -1,0 +1,464 @@
+/* body styles */
+
+html {
+    font-size: 16px; /*16px = 1rem*/
+}
+
+body {
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+h1 {
+    color: #81B622;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 3.125rem; /* desktop -  35px - 50px, mobile - 25px to 30px */
+}
+
+h2 {
+    color: #81B622;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2.8125rem;
+}
+
+h3 {
+    color: #81B622;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2.1875rem;
+}
+
+a {
+    font-family: "Open Sans", sans-serif;
+    color: #F2C94C;
+    text-decoration: none;
+}
+
+p {
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+button {
+    background-color: green;
+    color: yellow; /*#333333*/
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    border-radius: 5%;
+    text-transform: uppercase;
+    width: 10rem;
+    height: 3rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* .tagline / .quote {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+
+/* header */
+
+header .navbar {
+    background-color: white;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar .nav ul {
+    display: flex;
+}
+
+.navbar .nav ul li {
+    list-style: none;
+    padding-right: 3.125rem;
+}
+
+.navbar .logo img {
+    width: 11%;
+}
+
+.navbar .logo .logo-title {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 3.125rem;
+}
+
+/* main */
+
+.hero-section {
+    background-image: url(./images/victoria-shes-4MEL9XS-3JQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.25rem;
+}
+
+
+.hero-section .banner {
+    background-color: rgba(249, 249, 249, 0.9);
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    height: 50%;
+}
+
+.hero-section .banner button {
+    align-self: center;
+}
+
+.hero-section .banner p {
+    padding-bottom: 1.2rem;
+}
+
+.hero-section .banner h1 {
+    margin-top: 0;
+}
+
+/* food section */
+
+.title {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.food-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #81B622;
+}
+
+.menu img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+
+.menu h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu p {
+    font-size: 1rem;
+    color: #333333;
+}
+/* team/staff members section */
+
+.title {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.staff-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.staff-member {
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.staff-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.staff-member h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.staff-member p {
+    font-size: 14px;
+    color: #333333;
+}
+
+/* footer section */
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media img {
+    width: 3%;
+    padding: 2%;
+}
+
+/* tablet specs 768px - 1024px*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    h1 {
+        font-size: 2.5rem; /* desktop -  35px - 50px, mobile - 25px to 30px */
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+    }
+
+    p, a {
+        font-size: 0.9rem;
+    }
+
+
+
+    header .navbar {
+         height: 4.5rem;
+    }
+
+    .navbar .logo img {
+        width: 11%;
+    }
+
+    .navbar .logo .logo-title {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav ul li {
+        font-size: 0.8rem;
+    }
+
+    .hero-section {
+        background-image: url(./images/victoria-shes-4MEL9XS-3JQ-unsplash.jpg);
+        background-size: cover;
+    }
+
+    .hero-section .banner {
+        line-height: 1.2;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        height: 40%;
+    }
+
+    button {
+        background-color: green;
+        color: yellow; /*#333333*/
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        border-radius: 5%;
+        text-transform: uppercase;
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    .menu {
+        margin: 10px;
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .menu img {
+        width: 100%;
+        height: auto;
+        border-radius: 12%;
+        margin-bottom: 15px;
+    }
+
+    .staff-member {
+        margin: 15px;
+        width: 170px;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .staff-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 18px;
+    }
+
+    footer .social-media img {
+        width: 3%;
+        padding: 3%;
+    }
+}
+
+/* mobile specs  375px - 768px*/
+
+@media screen and (min-width: 375px) and (max-width: 768px){
+
+    h1 {
+        font-size: 2rem; /* desktop -  35px - 50px, mobile - 25px to 30px */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p, a {
+        font-size: 0.8rem;
+    }
+
+    header .navbar {
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         position: unset;
+         padding: 50px;
+    }
+
+    header .navbar .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar .logo img {
+        width: 30%;
+    }
+
+    .navbar .logo .logo-title {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar .nav ul li {
+        padding: 15px;
+    }
+
+    .navbar .nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .hero-section {
+        background-image: url(./images/victoria-shes-4MEL9XS-3JQ-unsplash.jpg);
+        background-size: cover;
+        padding: 0;
+    }
+
+    .hero-section .banner {
+        line-height: 1.2;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        height: 50%;
+    }
+
+    button {
+        background-color: green;
+        color: yellow; /*#333333*/
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        border-radius: 5%;
+        text-transform: uppercase;
+        width: 8rem;
+        height: 2.2rem;
+    }
+
+    .menu {
+        margin: 10px;
+        width: 250px;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .menu img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+        margin-bottom: 10px;
+    }
+
+    .staff-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .staff-member {
+        margin: 15px;
+        width: 200px;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .staff-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 18px;
+    }
+
+    footer .social-media img {
+        width: 5%;
+        padding: 3%;
+    }
+}
